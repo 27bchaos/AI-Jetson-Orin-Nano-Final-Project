@@ -2,8 +2,6 @@
 
 A real-time AI-powered video analytics system that detects people in a live video stream using YOLOv8, draws bounding boxes, analyzes crowd levels, and streams the processed output through a Flask web server.
 
-![Crowd Detection Demo](https://your-image-link-here.jpg)
-
 ## The Algorithm
 
 This project uses Ultralytics YOLOv8 to perform real-time object detection on a live video stream. The system focuses on detecting people and builds analytics on top of those detections.
@@ -38,13 +36,10 @@ This project uses Ultralytics YOLOv8 to perform real-time object detection on a 
 ## Running this project
 
 ### 1. Install dependencies
-
-```bash
 pip install flask opencv-python numpy ultralytics
 
-Make sure you are in the correct folder where depency is installed and run python app.py where the file gets saved when you downloaded it.
+Make sure you are in the correct folder where dependency is installed and run python app.py where the file gets saved when you downloaded it.
 
 Open in http://localhost:5000 or your htps://yourjetsonnanoip:5000
 
-[View a video explanation here](video link)
-
+View a video explanation here: video link
