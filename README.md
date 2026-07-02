@@ -40,7 +40,11 @@ This project uses Ultralytics YOLOv8 to perform real-time object detection on a 
 ### 1. Install dependencies
 pip install flask opencv-python numpy ultralytics
 
-Make sure you are in the correct folder where dependency is installed and run python app.py where the file gets saved when you downloaded it.
+Before running, make sure you are inside the correct project folder:
+
+```bash
+cd cedarpoint-web
+python app.py
 
 Open in http://localhost:5000 or your htps://yourjetsonnanoip:5000
 
