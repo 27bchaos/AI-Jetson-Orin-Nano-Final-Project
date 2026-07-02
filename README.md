@@ -2,8 +2,8 @@
 
 A real-time AI-powered video analytics system that detects people in a live video stream using YOLOv8, draws bounding boxes, analyzes crowd levels, and streams the processed output through a Flask web server.
 
-![Crowd Detection Demo](https://your-image-link.com/demo.jpg)
-<img width="1052" height="596" alt="Screenshot 2026-07-02 at 2 08 05 PM" src="https://github.com/user-attachments/assets/3e8ec75e-ce0f-4edf-9be1-71345f19e355" />
+![Crowd Detection Demo]([https://your-image-link.com/demo.jpg](https://github.com/user-attachments/assets/3e8ec75e-ce0f-4edf-9be1-71345f19e355))
+
 
 ## The Algorithm
 
