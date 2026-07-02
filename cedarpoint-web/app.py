@@ -91,7 +91,7 @@ def generate_frames():
             cls = int(box.cls[0])
             conf = float(box.conf[0])
 
-            if cls == 0 and conf > 0.25:
+            if cls == 0 and conf > 0.20:
                 people += 1
 
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
@@ -102,13 +102,13 @@ def generate_frames():
 
                 heatmap[cy, cx] += 1
 
-        last_people = people
         people_history.append(people)
+        last_people = int(sum(people_history) / len(people_history))
 
         # -------------------
         # HEATMAP DECAY
         # -------------------
-        heatmap *= 0.95
+        heatmap = heatmap * 0.95
 
         heatmap_norm = cv2.normalize(heatmap, None, 0, 255, cv2.NORM_MINMAX)
         heatmap_norm = heatmap_norm.astype(np.uint8)
@@ -149,12 +149,7 @@ def generate_frames():
         # -------------------
         risk_score = min(100, last_people * 6)
 
-        # -------------------
-        # FPS
-        # -------------------
-        curr_time = time.time()
-        fps = 1 / max(curr_time - prev_time, 0.001)
-        prev_time = curr_time
+       
 
         # -------------------
         # TEXT OVERLAY
@@ -171,8 +166,7 @@ def generate_frames():
         cv2.putText(frame, f"Trend: {trend}", (20, 160),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
-        cv2.putText(frame, f"FPS: {int(fps)}", (20, 200),
-                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
+        
 
         # -------------------
         # STREAM OUTPUT
