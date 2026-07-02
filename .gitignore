@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Training outputs
+cedarpoint-ai/runs/
+cedarpoint-ai/logs/
+
+# Datasets
+cedarpoint-ai/datasets/
+
+# Large model weights
+*.pt
