@@ -46,6 +46,7 @@ Make sure you are in the project root folder, then run:
 ```bash
 cd cedarpoint-ai/docs
 pip install -r requirements.txt
+```
 
 ### 2. Run the project
 
@@ -59,11 +60,13 @@ python app.py
 ### 3. Open in browser
 
 Open:
+
 ```
 http://localhost:5000
 ```
 
 Or:
+
 ```
 http://YOUR_DEVICE_IP:5000
 ```
