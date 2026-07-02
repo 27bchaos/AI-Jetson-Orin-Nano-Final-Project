@@ -2,6 +2,8 @@
 
 A real-time AI-powered video analytics system that detects people in a live video stream using YOLOv8, draws bounding boxes, analyzes crowd levels, and streams the processed output through a Flask web server.
 
+![Crowd Detection Demo](https://your-image-link.com/demo.jpg)
+
 ## The Algorithm
 
 This project uses Ultralytics YOLOv8 to perform real-time object detection on a live video stream. The system focuses on detecting people and builds analytics on top of those detections.
