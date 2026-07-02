@@ -73,8 +73,7 @@ http://YOUR_DEVICE_IP:5000
 
 
 ### 4. Video Explanation
-
-[![Watch Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://github.com/user-attachments/assets/2eabd1b6-fdbf-4f18-b6b7-2888bdc7ecae)
+[View a video explanation here](https://github.com/user-attachments/assets/2eabd1b6-fdbf-4f18-b6b7-2888bdc7ecae)
 
 
 
