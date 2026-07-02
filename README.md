@@ -2,6 +2,8 @@
 
 A real-time AI-powered video analytics system that detects people in a live video stream using YOLOv8, draws bounding boxes, analyzes crowd levels, and streams the processed output through a Flask web server.
 
+## Image Demo
+
 ![Crowd Detection Demo](https://github.com/user-attachments/assets/3e8ec75e-ce0f-4edf-9be1-71345f19e355)
 
 ## The Algorithm
@@ -38,14 +40,35 @@ This project uses Ultralytics YOLOv8 to perform real-time object detection on a 
 ## Running this project
 
 ### 1. Install dependencies
-pip install flask opencv-python numpy ultralytics
+
+Make sure you are in the project root folder, then install requirements:
+
+```bash
+cd cedarpoint-ai
+pip install -r docs/requirements.txt
+```
+
+### 2. Run the project
 
 Before running, make sure you are inside the correct project folder:
 
 ```bash
 cd cedarpoint-web
 python app.py
+```
 
-Open in http://localhost:5000 or your htps://yourjetsonnanoip:5000
+### 3. Open in browser
+
+Open:
+```
+http://localhost:5000
+```
+
+Or:
+```
+http://YOUR_DEVICE_IP:5000
+```
+
+### 4. Video Explanation
 
 View a video explanation here: video link
