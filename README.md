@@ -41,12 +41,11 @@ This project uses Ultralytics YOLOv8 to perform real-time object detection on a 
 
 ### 1. Install dependencies
 
-Make sure you are in the project root folder, then install requirements:
+Make sure you are in the project root folder, then run:
 
 ```bash
-cd cedarpoint-ai
-pip install -r docs/requirements.txt
-```
+cd cedarpoint-ai/docs
+pip install -r requirements.txt
 
 ### 2. Run the project
 
