@@ -78,13 +78,7 @@ def generate_frames():
             color = (0, 0, 255)
             risk = 90
 
-        # ======================
-        # FPS CALC
-        # ======================
-
-        curr_time = time.time()
-        fps = 1 / (curr_time - prev_time)
-        prev_time = curr_time
+        
 
         # ======================
         # OVERLAY TEXT
@@ -99,9 +93,7 @@ def generate_frames():
         cv2.putText(frame, f"Risk: {risk}/100", (20, 120),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2)
 
-        cv2.putText(frame, f"FPS: {int(fps)}", (20, 160),
-                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
-
+      
         # Encode frame
         _, buffer = cv2.imencode('.jpg', frame)
         frame_bytes = buffer.tobytes()
